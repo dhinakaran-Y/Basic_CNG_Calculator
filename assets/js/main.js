@@ -19,7 +19,7 @@ calculateBtnEl.addEventListener("click" , event => {
 
         const result = (distanceKM / milage)*fuelCost
 
-        resultEl.innerText = `The Amount you should spend for Fuel : Rs.${result}`
+        resultEl.innerText = `The Amount you should spend for Fuel : Rs.${result.toFixed(2)}`
         resultEl.classList.remove('hidden')
     }
 })
